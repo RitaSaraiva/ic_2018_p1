@@ -18,11 +18,19 @@ int main(void) {
   int valor_premio;
   float resto;
   char resposta[3];
+  char bla[30];
 
   printf("BEM-VINDO AO JOGO DA ROLETA!\n");
   printf("\nCréditos: 100€\n");
 
   creditos = 100;
+
+  strcpy(bla, "");
+  printf("Digite [t]\n >>");
+  scanf("%s", bla);
+  if (strcmp(bla, "t") == 0){
+    printf("Trabalho desenvolvido por: Lucas Viana, Rita Saraiva e João Ramos");
+  }
 
   strcpy(dificuldades, "");
   while(strcmp(dificuldades, "b") != 0 && strcmp(dificuldades, "n") != 0 && strcmp(dificuldades, "e") != 0){
